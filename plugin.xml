@@ -98,7 +98,7 @@
             </feature>
         </config-file>
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-            <application android:requestLegacyExternalStorage="true" />
+            <application android:requestLegacyExternalStorage="true" android:usesCleartextTraffic="true"/>
         </edit-config>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light">
